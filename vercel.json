@@ -1,14 +1,14 @@
 {
   "buildCommand": "pip install -r requirements.txt",
   "functions": {
-    "main.py": {
+    "api/main.py": {
       "maxDuration": 30
     }
   },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "main.py"
+      "dest": "api/main.py"
     }
   ]
 }
